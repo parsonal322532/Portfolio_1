@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.contandner{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+}
+.logo {
+    position: relative;
+    right: 33%;
+}
+.logo a{
+    font-weight: bold;
+    color: #2F2E41;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.searchAcea {
+    position: fixed;
+    right: 150px;
+    width: 170px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(167, 158, 245, 0.2) 2px 2px 30px;
+    border-radius: 10% / 50%;
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgba(167, 158, 245, 0.1);
+}
+.searchAcea input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:#1F1F1F ;
+    font-size: 1rem;
+    padding: 0 10px;
+
+}
+.section1 img{
+    position: absolute;
+    top: 50%;
+    left:15% ;
+    transform: translate(-15%,-50%);
+    height: 300px;
+    
+
+}
+
+.sectionbutton {
+    margin-right: 200px;
+    margin-top: 10PX;
+    
+}
+.sectionbutton h1{
+    margin: 0px;
+    font-size: 64px;
+    letter-spacing: 25px;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 240px;
+    
+}
+.sectionbutton h2{
+    font-size: 64px;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+.colarblue{
+    color:#7A72FF ;
+}
+.btn{
+    font-family: calibri;
+    padding: 10px 45px;
+    padding-bottom: 12px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 10% / 50% ;
+    border: none;
+    background-color: #2f2e41;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: #6e64ff;
+    transition: all ease 0.5s;
+}
+.content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons{
+    position: fixed;
+    top: 40%;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);;
+    padding: 5px 0px;
+    border-radius:20px ;
+    background-color: #FFFFFF;
+}
+.icons a{
+    padding: 20px 15px;
+    color: #1F1F1F;
+}
+.icons a:hover .fa-facebook{
+	color: #3b5998;
+}
+.icons a:hover .fa-twitter{
+	color: #00acee ;
+}
+.icons a:hover .fa-instagram{
+	color:  #3f729b ;
+}
+.icons a:hover .fa-youtube{
+ 
+	color: 	#FF0000;
+}
+.productSection{
+    width: 85%;
+    background-color: #FFFFFF;
+    box-shadow:2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    background-size: 1000px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.productSection h3{
+    font-size:2rem ;
+    margin: 20px;
+    font-family: myriad pro;
+    color: #323543;
+    font-weight: 700;
+    align-items: center;
+    letter-spacing: 2px;
+
+}
+span{
+    color: #7A72FF;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    width: 100%;
+}
+.productBox{
+    width:250px;
+	height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin:10px 30px ;
+    position: relative;
+}
+.productBox p{
+    color:#C0BBBB ;
+    font-family: myriad pro;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+}
+.productBox img{
+    height: 180px;
+}
+.productBox a{
+    color: #2c2c2c;
+    font-family: poppins;
+    font-size: 1rem;
+}
+.BuyBtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+    border-radius: 15% / 50%;
+    background: linear-gradient(120deg,#6b60ec 20%,#a166f4);
+    color: #fff;
+    display: none;
+    animation: fade 0.2s;
+}
+.productBox:hover .BuyBtn{
+    display: flex;
+}
+.productBox:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.productBox:hover a:last-child{
+    color: #fff;
+    transition: all ease 0.3s;
+}
+.about{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    padding: 30px;
+    margin-bottom: 150px !important;
+
+}
+.aboutbox{
+    width: 40%;
+    font-family: myriad pro;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    color: #333333;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+}
+.aboutbox h4{
+    color:#333333 ;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutbox p{
+    color: #D5D5D5;
+    font-size: 1rem;
+    letter-spacing: 0.5;
+}
+.notification{
+    width: 100%;
+    height:250px ;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notification h3{
+    font-size: 2rem;
+    color:rgb(56, 56, 56) ;
+   
+}
+.notificationinput{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 7% / 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.notificationinput input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.NotificationButton{
+    width: 120px;
+    height: 40px;
+    background-color: #202020;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1) ;
+    font-size: 1rem;
+}
+.NotificationButton:hover{
+    background-color: #6b60ec;
+    transition: all ease 0.5s;
+}
+footer{
+    background-color: black !important;
+    padding: 20px;
+}
+footer p{
+    text-align:center ;
+    color: #f2f2f2;
+}
