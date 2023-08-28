@@ -3,7 +3,15 @@
     padding: 0;
     font-family: sans-serif;
 }
-.contandner{
+.contener{
+    width: 1550px;
+    margin: 0 auto;
+}
+.padding-lr{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.section-1{
     width: 100%;
     height: 100vh;
 }
@@ -12,16 +20,13 @@ a{
 }
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 20px;
     background: #FFFFFF;
 }
-.logo {
-    position: relative;
-    right: 33%;
-}
+
 .logo a{
     font-weight: bold;
     color: #2F2E41;
@@ -54,20 +59,15 @@ a{
     padding: 0 10px;
 
 }
-.section1 img{
-    position: absolute;
-    top: 50%;
-    left:15% ;
-    transform: translate(-15%,-50%);
-    height: 300px;
-    
+.section1{
+    width: 45%;
 
 }
-
+.section1 img{
+    width: 100%;
+}
 .sectionbutton {
-    margin-right: 200px;
-    margin-top: 10PX;
-    
+    width: 45%;
 }
 .sectionbutton h1{
     margin: 0px;
@@ -76,7 +76,7 @@ a{
     font-family: Roboto;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 240px;
+    
     
 }
 .sectionbutton h2{
@@ -108,9 +108,11 @@ a{
 }
 .content{
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
+    padding-top: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
 .icons{
     position: fixed;
@@ -124,6 +126,7 @@ a{
     padding: 5px 0px;
     border-radius:20px ;
     background-color: #FFFFFF;
+    z-index: 10;
 }
 .icons a{
     padding: 20px 15px;
@@ -143,18 +146,14 @@ a{
 	color: 	#FF0000;
 }
 .productSection{
-    width: 85%;
+    width: 100%;
     background-color: #FFFFFF;
     box-shadow:2px 2px 30px rgba(167, 158, 245, 0.2);
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
     align-items: center;
-    padding: 40px 20px;
-    margin-top: -60px;
-    background-size: 1000px;
+    padding: 40px 0;
     border-radius: 10px;
-    position: relative;
 
 }
 .productSection h3{
@@ -175,16 +174,17 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px 0;
+    padding: 20px 0;
     width: 100%;
+    gap: 50px;
 }
 .productBox{
-    width:250px;
-	height: 330px;
+    width: 20%;
+    padding-bottom: 30px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   margin:10px 30px ;
     position: relative;
 }
 .productBox p{
@@ -192,14 +192,19 @@ span{
     font-family: myriad pro;
     font-size: 0.9rem;
     letter-spacing: 0.5;
+    padding-bottom: 10px;
 }
 .productBox img{
-    height: 180px;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .productBox a{
     color: #2c2c2c;
     font-family: poppins;
     font-size: 1rem;
+    
 }
 .BuyBtn{
     position: absolute;
@@ -217,6 +222,7 @@ span{
     color: #fff;
     display: none;
     animation: fade 0.2s;
+    
 }
 .productBox:hover .BuyBtn{
     display: flex;
@@ -232,13 +238,11 @@ span{
 }
 .about{
     display: flex;
-    width: 85%;
     justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
-    padding: 30px;
-    margin-bottom: 150px !important;
-
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .aboutbox{
     width: 40%;
@@ -313,6 +317,9 @@ span{
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1) ;
     font-size: 1rem;
 }
+.sct-1-img{
+    width:50% ;
+}
 .NotificationButton:hover{
     background-color: #6b60ec;
     transition: all ease 0.5s;
@@ -322,6 +329,39 @@ footer{
     padding: 20px;
 }
 footer p{
-    text-align:center ;
+    text-align:center;
     color: #f2f2f2;
+}
+@media (max-width:1200px){
+    .contener{
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    .contener{
+        width: 100%;
+    }
+    .content{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sectionbutton{
+        width: 70%;
+    }
+    .section1{
+        width: 90%;
+    }
+    .productSection{
+        margin-top: 100px;
+    }
+    .productBox{
+        width: 45%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .aboutbox{
+        width: 100%;
+        padding-bottom: 50px;
+    }
 }
